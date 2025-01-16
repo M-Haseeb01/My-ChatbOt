@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat with AI</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Chat with AI</h1>
+        </header>
+        <main>
+            <div class="chat-history">
+                <h2>Conversation History</h2>
+                <div class="history-box">
+                    <pre>{{ history }}</pre>
+                </div>
+            </div>
+            <div class="response-box">
+                <h3>AI Response:</h3>
+                <p>{{ response }}</p>
+            </div>
+            <form method="POST">
+                <input type="text" name="user_input" placeholder="Type your message here..." required>
+                <button type="submit">Send</button>
+            </form>
+        </main>
+        <footer>
+            <p>&copy; 2025 Chat Application</p>
+        </footer>
+    </div>
+</body>
+</html>
